@@ -31,21 +31,33 @@ console.log(currentTime); // or display on your HTML page with document.write(cu
 let daySelector = document.querySelector("#day");
 daySelector.innerHTML = currentTime;
 
-// temperature
+// 1.temperature
 function showTemperature(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#number");
   temperatureElement.innerHTML = `${temperature}`;
-
   // update city name
   let currentCity = document.querySelector("#cityName");
   currentCity.innerHTML = response.data.name;
-
   // update the temperature-description
   let description = document.querySelector("#temperature-description");
   description.innerHTML = response.data.weather[0].description;
+  // humidity
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  // wind
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = response.data.wind.speed;
+  // icon-weather
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#cityInput");

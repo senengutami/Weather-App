@@ -1,9 +1,7 @@
 body {
-  margin: 0 auto !important;
+  margin: 100px auto !important;
   max-width: 950px;
   max-height: 250px;
-  padding: 25px;
-  /* font-family: "Lobster Two", cursive; */
   font-family: "Shantell Sans", cursive !important;
 }
 ul {
@@ -17,7 +15,7 @@ img {
   margin: 0 auto;
   border-radius: 10px;
   transition: all 200ms ease-in-out;
-  width: 50px;
+  width: 55px;
 }
 li {
   list-style: none;
@@ -26,7 +24,7 @@ input {
   outline: 0;
   border-width: 0 0 2px;
   border-color: #6287a1 !important;
-  width: 350px;
+  width: 250px;
 }
 input:focus {
   border-color: green;
@@ -47,7 +45,9 @@ input:focus {
   --bs-btn-disabled-border-color: #6c757d;
 }
 .big-icon {
-  width: 200px;
+  width: 150px;
+  margin-left: 0px;
+  margin-top: -25px;
 }
 .week-days {
   display: flex;
@@ -63,18 +63,15 @@ p {
 }
 
 .wrapper {
-  /* padding-left: 65px;
-  padding-top: 35px; */
   width: 100%;
   padding: 50px;
 }
 .week-weather-wrapper {
-  /* padding-left: 40px; */
-  /* width: 90%; */
   justify-content: space-between;
 }
 .container {
   padding-left: 0px;
+  padding-top: 20px;
 }
 .row-weather {
   display: flex;
@@ -88,7 +85,7 @@ p {
   justify-content: space-around;
   flex-direction: column;
   line-height: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .country {
   font-size: 10px;
@@ -113,11 +110,11 @@ p {
 }
 .city-name {
   font-size: 50px;
-  padding-bottom: 40px;
-  margin-top: -20px;
+  padding-bottom: 25px;
+  margin-top: -45px;
 }
 .temperature {
-  font-size: 90px;
+  font-size: 55px;
 }
 @media only screen and (max-width: 600px) {
   .city-name {
@@ -126,13 +123,8 @@ p {
     margin-top: -20px;
   }
   .temperature {
-    font-size: 70px;
+    font-size: 25px;
   }
-}
-.small-text {
-  font-size: 30px;
-  position: relative;
-  top: -55px;
 }
 
 .source {
@@ -144,4 +136,27 @@ a {
 
 a:hover {
   text-decoration: underline !important;
+}
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -30px;
+}
+.wrapper-number {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 100px;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 650px) {
+  html {
+    width: 650px;
+    overflow: auto;
+  }
+}
+.temperature-description {
+  text-transform: capitalize;
 }

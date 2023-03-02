@@ -27,15 +27,15 @@
   </head>
   <body>
     <div id="app">
-      <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+      <div class="shadow p-3 mb-5 bg-body-tertiary rounded p-3">
         <div class="wrapper">
-          <section class="cities fs-4">
-            <ul>
-              <li class="text-primary">Bhaktapur</li>
-              <li class="text-warning">Semarang</li>
-              <li class="text-success">Kuala Lumpur</li>
-              <li class="text-danger">Sydney</li>
-            </ul>
+          <section>
+            <div class="row">
+              <div class="col-3 text-primary fs-4">Bhaktapur</div>
+              <div class="col-3 text-warning fs-4">Semarang</div>
+              <div class="col-3 text-success fs-4">Kuala Lumpur</div>
+              <div class="col-3 text-danger fs-4">Sydney</div>
+            </div>
           </section>
           <section class="search pt-3">
             <form class="container">
@@ -55,10 +55,8 @@
           <section class="city-descriptions">
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                <div class="col-sm-12 col-md-6">
                   <div class="city">
-                    <!-- <span class="border border-2 rounded-pill country">NP</span> -->
-                    <!-- id = city -->
                     <h2 class="city-name" id="cityName">
                       Kathmandu<sup
                         ><span
@@ -70,77 +68,86 @@
                     </h2>
                     <div class="abc">
                       <p id="day">Thursday 16:55</p>
-                      <p id="temperature-description">Cloudy</p>
+                      <p
+                        id="temperature-description"
+                        class="temperature-description"
+                      >
+                        Cloudy
+                      </p>
                     </div>
                   </div>
-                  <div class="degree">
-                    <h5 class="temperature">
-                      <!-- id = temperature -->
-                      <strong id="number">23</strong
-                      ><sup class="small-text"
+                  <div class="d-flex degree">
+                    <img
+                      src=" http://openweathermap.org/img/wn/10d@2x.png"
+                      alt="sunny and rain"
+                      id="icon"
+                      class="big-icon"
+                    />
+                    <div class="wrapper-number">
+                      <strong id="number" class="temperature">23</strong>
+                      <span class="units"
                         ><a href="#" id="celcius">°C </a>
                         |
-                        <a href="#" id="fahrenheit">°F</a></sup
+                        <a href="#" id="fahrenheit">°F</a></span
                       >
-                    </h5>
-                    <img src="image/sun-rain.png" class="big-icon" />
+                    </div>
+                    <!-- id = temperature -->
                   </div>
                 </div>
-                <div class="col-6 abc">
-                  <div>
-                    <p>Preciptation: 60%</p>
-                    <p>Wind 2km/h</p>
+                <div class="col-sm-12 col-md-6 abc">
+                  <div style="padding-bottom: 75px">
+                    <p>Humidity:<span id="humidity"></span></p>
+                    <p>Wind: <span id="wind"></span>km/h</p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
           <section>
-            <ul class="week-weather-wrapper">
-              <li>
+            <div class="row pt-2">
+              <div class="col-2">
                 <div class="week-days">
                   <p>Fri</p>
                   <img src="image/sun-rain.png" class="icon" />
                   <p>23</p>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="col-2">
                 <div class="week-days">
                   <p>Sat</p>
                   <img src="image/sun-rain.png" class="icon" />
-                  <p>24</p>
+                  <p>23</p>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="col-2">
                 <div class="week-days">
                   <p>Sun</p>
                   <img src="image/sun-rain.png" class="icon" />
-
-                  <p>20</p>
+                  <p>23</p>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="col-2">
                 <div class="week-days">
                   <p>Mon</p>
                   <img src="image/sun-rain.png" class="icon" />
-                  <p>21</p>
+                  <p>23</p>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="col-2">
                 <div class="week-days">
                   <p>Tue</p>
                   <img src="image/sun-rain.png" class="icon" />
-                  <p>22</p>
+                  <p>23</p>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="col-2">
                 <div class="week-days">
                   <p>Wed</p>
                   <img src="image/sun-rain.png" class="icon" />
-                  <p>22</p>
+                  <p>23</p>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -148,7 +155,8 @@
         <small>
           <a href="https://github.com/senengutami/Weather-App" target="_blank"
             >Open-source code</a
-          >", by Seneng Utami"
+          >
+          by Seneng Utami
         </small>
       </section>
     </div>
