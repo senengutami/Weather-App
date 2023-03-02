@@ -24,7 +24,7 @@ input {
   outline: 0;
   border-width: 0 0 2px;
   border-color: #6287a1 !important;
-  width: 250px;
+  width: 80px;
 }
 input:focus {
   border-color: green;
@@ -45,7 +45,7 @@ input:focus {
   --bs-btn-disabled-border-color: #6c757d;
 }
 .big-icon {
-  width: 150px;
+  width: 160px;
   margin-left: 0px;
   margin-top: -25px;
 }
@@ -114,7 +114,7 @@ p {
   margin-top: -45px;
 }
 .temperature {
-  font-size: 55px;
+  font-size: 50px;
 }
 @media only screen and (max-width: 600px) {
   .city-name {
@@ -159,4 +159,7 @@ body {
 }
 .temperature-description {
   text-transform: capitalize;
+}
+.width-search {
+  width: 300px;
 }

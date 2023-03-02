@@ -38,14 +38,16 @@
             </div>
           </section>
           <section class="search pt-3">
-            <form class="container">
+            <form class="container" id="search-form">
               <input
-                type="text"
+              class="width-search"
+                type="search"
                 placeholder="Search for a city"
                 id="cityInput"
+                autocomplete="off"
               />
-              <button type="button" class="btn btn-secondary" id="search">
-                Search
+              <input type="submit" class="btn btn-secondary" id="search">
+              
               </button>
               <button type="button" class="btn btn-secondary" id="current">
                 Current
@@ -58,13 +60,7 @@
                 <div class="col-sm-12 col-md-6">
                   <div class="city">
                     <h2 class="city-name" id="cityName">
-                      Kathmandu<sup
-                        ><span
-                          class="border border-2"
-                          style="border-radius: 5px; font-size: 14px"
-                          >NP</span
-                        ></sup
-                      >
+                      Kathmandu 
                     </h2>
                     <div class="abc">
                       <p id="day">Thursday 16:55</p>

@@ -87,3 +87,6 @@ currentBut.addEventListener("click", getCurrentPosition);
 
 let searchBut = document.querySelector("#search");
 searchBut.addEventListener("click", search);
+
+let searchsubmit = document.querySelector("#search-form");
+searchsubmit.addEventListener("submit", search);
