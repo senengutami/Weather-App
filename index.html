@@ -40,15 +40,13 @@
           <section class="search pt-3">
             <form class="container" id="search-form">
               <input
-              class="width-search"
+                class="width-search"
                 type="search"
                 placeholder="Search for a city"
                 id="cityInput"
                 autocomplete="off"
               />
-              <input type="submit" class="btn btn-secondary" id="search">
-              
-              </button>
+              <input type="submit" class="btn btn-secondary" id="search" />
               <button type="button" class="btn btn-secondary" id="current">
                 Current
               </button>
@@ -59,9 +57,7 @@
               <div class="row">
                 <div class="col-sm-12 col-md-6">
                   <div class="city">
-                    <h2 class="city-name" id="cityName">
-                      Kathmandu 
-                    </h2>
+                    <h2 class="city-name" id="cityName">Kathmandu</h2>
                     <div class="abc">
                       <p id="day">Thursday 16:55</p>
                       <p
@@ -72,19 +68,21 @@
                       </p>
                     </div>
                   </div>
-                  <div class="d-flex degree">
+                  <div class="d-flex justify-content-start degree">
                     <img
-                      src=" http://openweathermap.org/img/wn/10d@2x.png"
+                      src=" http://openweathermap.org/img/wn/01d@2x.png"
                       alt="sunny and rain"
                       id="icon"
-                      class="big-icon"
+                      class="big-icon float-left"
                     />
                     <div class="wrapper-number">
-                      <strong id="number" class="temperature">23</strong>
+                      <strong id="number" class="temperature" data-temp="c"
+                        >23</strong
+                      >
                       <span class="units"
-                        ><a href="#" id="celcius">°C </a>
+                        ><a href="#" id="celcius" class="active">°C </a>
                         |
-                        <a href="#" id="fahrenheit">°F</a></span
+                        <a href="#" id="fahrenheit" class="active">°F</a></span
                       >
                     </div>
                     <!-- id = temperature -->
