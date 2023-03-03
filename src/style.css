@@ -62,6 +62,8 @@ input:focus {
 }
 p {
   color: grey;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
 }
 
 .wrapper {
